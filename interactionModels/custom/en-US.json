@@ -1,0 +1,65 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "slots": [
+            {
+              "name": "action",
+              "type": "ActionType"
+            }
+          ],
+          "name": "GameIntent",
+          "samples": [
+            "i want {action}",
+            "i play this {action}",
+            "{action}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "scissors"
+              }
+            },
+            {
+              "name": {
+                "value": "paper"
+              }
+            },
+            {
+              "name": {
+                "value": "rock"
+              }
+            }
+          ],
+          "name": "ActionType"
+        }
+      ],
+      "invocationName": "my game"
+    }
+  }
+}
